@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>今日六事</title>
+    <!-- 引入Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div id="app">
+        <div class="center-text">
+            今日六事
+        </div>
+        <!-- 添加一个 div 来显示时间 -->
+        <div id="currentTime"
+            style="position: absolute; top: 85px; left: 50%; transform: translateX(-50%); font-size: 14px;">
+            <span id="clock"></span>
+        </div>
+        <div class="rounded-box">
+            <textarea id="todoText" placeholder="在此处输入"></textarea>
+        </div>
+        <!-- 添加一个 div 作为弹出的圆弧形方框 -->
+        <div id="popup-boxes"></div>
+        <!-- 提示框 -->
+        <div id="alert-box" class="alert-box">
+            明天再说
+        </div>
+    </div>
+    <!-- 引入外部 JS 文件 -->
+    <script src="todo.js"></script>
+    <!-- 引入第二个外部 JS 文件 -->
+    <script src="星空2.js"></script>
+</body>
+
+</html>
