@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Fire Detection System</h1>
+
+    <div class="container">
+        <section id="video-upload-section">
+            <h2>Upload Video for Detection</h2>
+            <input type="file" id="videoUpload" accept="video/*">
+            <button id="uploadButton">Upload and Process Video</button>
+            <div id="videoUploadResult"></div>
+        </section>
+
+        <hr>
+
+        <section id="camera-detection-section">
+            <h2>Live Camera Detection</h2>
+            <div class="video-container">
+                <video id="cameraFeed" autoplay playsinline width="640" height="480" style="display:none;"></video>
+                <canvas id="cameraCanvas" width="640" height="480"></canvas>
+            </div>
+            <button id="startCameraButton">Start Camera</button>
+            <button id="stopCameraButton">Stop Camera</button>
+            <div id="cameraStatus"></div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
